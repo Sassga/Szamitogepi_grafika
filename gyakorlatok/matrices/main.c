@@ -19,8 +19,9 @@ int main(int argc, char* argv[])
     print_matrix(b);
     
     add_matrices(a, b, c);
-
+	init_identity_matrix(a);
     print_matrix(c);
+	print_matrix(a);
 
 	return 0;
 }

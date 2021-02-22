@@ -12,6 +12,22 @@ void init_zero_matrix(float matrix[3][3])
             matrix[i][j] = 0.0;
         }
     }
+	
+}
+
+void init_identity_matrix(float matrix[3][3])
+{
+    int i;
+    int j;
+
+    for (i = 0; i < 3; ++i) {
+        for (j = 0; j < 3; ++j) {
+			if (i==j)matrix[i][j] = 1.0;
+			else
+            matrix[i][j] = 0.0;
+        }
+    }
+	
 }
 
 void print_matrix(const float matrix[3][3])
@@ -25,6 +41,7 @@ void print_matrix(const float matrix[3][3])
         }
         printf("\n");
     }
+	printf("\n");
 }
 
 void add_matrices(const float a[3][3], const float b[3][3], float c[3][3])
@@ -37,5 +54,6 @@ void add_matrices(const float a[3][3], const float b[3][3], float c[3][3])
             c[i][j] = a[i][j] + b[i][j];
         }
     }
+	
 }
 

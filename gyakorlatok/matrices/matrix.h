@@ -7,6 +7,11 @@
 void init_zero_matrix(float matrix[3][3]);
 
 /**
+ * Initializes identity matrix.
+ */
+void init_identity_matrix(float matrix[3][3]);
+
+/**
  * Print the elements of the matrix.
  */
 void print_matrix(const float matrix[3][3]);
