@@ -21,7 +21,13 @@ int main(int argc, char* argv[])
     add_matrices(a, b, c);
 	init_identity_matrix(a);
     print_matrix(c);
+	
+	printf("Identity \n");
 	print_matrix(a);
+	
+	scalar_matrices(b, 10, c);
+	printf("Scalar: \n");
+	print_matrix(b);
 
 	return 0;
 }

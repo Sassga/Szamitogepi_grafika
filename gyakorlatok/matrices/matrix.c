@@ -30,6 +30,20 @@ void init_identity_matrix(float matrix[3][3])
 	
 }
 
+void scalar_matrices(float result[3][3], float scalar, const float matrix[3][3])
+{
+    int i;
+    int j;
+
+    for (i = 0; i < 3; ++i) {
+        for (j = 0; j < 3; ++j) {
+			
+            result[i][j] = matrix[i][j]*scalar;
+        }
+    }
+	
+}
+
 void print_matrix(const float matrix[3][3])
 {
     int i;

@@ -21,5 +21,11 @@ void print_matrix(const float matrix[3][3]);
  */
 void add_matrices(const float a[3][3], const float b[3][3], float c[3][3]);
 
+/**
+ * Multiple matrix by a scalar.
+ */
+void scalar_matrices( float result[3][3], float scalar, const float matrix[3][3]);
+
+
 #endif // MATRIX_H
 
